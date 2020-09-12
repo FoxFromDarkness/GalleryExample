@@ -1,0 +1,104 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  height: 940px;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 30px 0;
+  font-weight: 700;
+}
+
+img {
+  float: left;
+  margin: 5px;
+  width: 400px;
+  height: 300px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.slider-wrapper {
+  width: 600px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.inner-wrapper {
+  width: 500%;
+  height: 100%;
+  position: relative;
+  left: -100%;
+
+}
+
+.slide {
+  width: calc(100% / 5);
+  height: 100%;
+  float: left;
+  font-size: 100px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  width: 30px;
+  height: 30px;
+  border-top: 2px solid black;
+  position: absolute;
+  cursor: pointer;
+}
+
+.prev {
+  border-left: 2px solid black;
+  left: 10%;
+  transform: rotate(-45deg);
+}
+
+.next {
+  border-right: 2px solid black;
+  right: 10%;
+  transform: rotate(45deg);
+}
+
+#content {
+  width: 70%;
+  margin: 20px auto;
+}
+
+.upload {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  width: 40%;
+  margin: 20px auto;
+}
+
+form div {
+  margin-top: 5px;
+}
+
+#img_div {
+  width: 100%;
+  padding: 5px;
+  margin: 15px auto;
+  border: 1px solid #cbcbcb;
+}
+
+#img_div:after {
+  content: "";
+  display: block;
+  clear: both;
+}
